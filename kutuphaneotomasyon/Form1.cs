@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace kutuphaneotomasyon
 {
-    public partial class Form1 : Form
+    public partial class Frm_Giris : Form
     {
-        public Form1()
+        public Frm_Giris()
         {
             InitializeComponent();
+        }
+
+        private void Frm_Giris_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
         }
     }
 }
