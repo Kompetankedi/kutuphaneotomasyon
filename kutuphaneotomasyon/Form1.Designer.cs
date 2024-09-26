@@ -46,6 +46,7 @@
             this.btnTrKitap.TabIndex = 0;
             this.btnTrKitap.Text = "Türkçe Kitaplar";
             this.btnTrKitap.UseVisualStyleBackColor = true;
+            this.btnTrKitap.Click += new System.EventHandler(this.btnTrKitap_Click);
             // 
             // btnYabancıKitaplar
             // 
@@ -56,6 +57,7 @@
             this.btnYabancıKitaplar.TabIndex = 1;
             this.btnYabancıKitaplar.Text = "Yabancı Kitaplar";
             this.btnYabancıKitaplar.UseVisualStyleBackColor = true;
+            this.btnYabancıKitaplar.Click += new System.EventHandler(this.btnYabancıKitaplar_Click);
             // 
             // btnOdunc
             // 
@@ -66,6 +68,7 @@
             this.btnOdunc.TabIndex = 2;
             this.btnOdunc.Text = "Ödünç Kitaplar";
             this.btnOdunc.UseVisualStyleBackColor = true;
+            this.btnOdunc.Click += new System.EventHandler(this.btnOdunc_Click);
             // 
             // label1
             // 
@@ -99,7 +102,7 @@
             this.Controls.Add(this.btnYabancıKitaplar);
             this.Controls.Add(this.btnTrKitap);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_Giris";
             this.ShowIcon = false;
             this.Text = "Giriş";

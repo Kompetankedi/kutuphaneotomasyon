@@ -21,5 +21,23 @@ namespace kutuphaneotomasyon
         {
             CenterToScreen();
         }
+
+        private void btnTrKitap_Click(object sender, EventArgs e)
+        {
+            FrmTrKitaplar frmTrKitaplar = new FrmTrKitaplar();
+            frmTrKitaplar.Show();
+        }
+
+        private void btnYabancıKitaplar_Click(object sender, EventArgs e)
+        {
+            FrmYabancıKitaplar frmYabancıKitaplar = new FrmYabancıKitaplar();
+            frmYabancıKitaplar.Show();
+        }
+
+        private void btnOdunc_Click(object sender, EventArgs e)
+        {
+            FrmOduncKitaplar f= new FrmOduncKitaplar();
+            f.Show();
+        }
     }
 }

@@ -52,10 +52,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOduncKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOduncKitaplar.Designer.cs">
+      <DependentUpon>FrmOduncKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrKitaplar.Designer.cs">
+      <DependentUpon>FrmTrKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYabancıKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYabancıKitaplar.Designer.cs">
+      <DependentUpon>FrmYabancıKitaplar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOduncKitaplar.resx">
+      <DependentUpon>FrmOduncKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrKitaplar.resx">
+      <DependentUpon>FrmTrKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYabancıKitaplar.resx">
+      <DependentUpon>FrmYabancıKitaplar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
