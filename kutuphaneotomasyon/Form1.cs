@@ -30,6 +30,7 @@ namespace kutuphaneotomasyon
 
         private void btnYabancıKitaplar_Click(object sender, EventArgs e)
         {
+
             FrmYabancıKitaplar frmYabancıKitaplar = new FrmYabancıKitaplar();
             frmYabancıKitaplar.Show();
         }

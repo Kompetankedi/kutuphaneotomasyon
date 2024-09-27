@@ -41,7 +41,7 @@
             this.btnTrKitap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnTrKitap.Location = new System.Drawing.Point(11, 44);
             this.btnTrKitap.Name = "btnTrKitap";
-            this.btnTrKitap.Size = new System.Drawing.Size(123, 41);
+            this.btnTrKitap.Size = new System.Drawing.Size(123, 56);
             this.btnTrKitap.TabIndex = 0;
             this.btnTrKitap.Text = "Türkçe Kitaplar";
             this.btnTrKitap.UseVisualStyleBackColor = true;
@@ -52,7 +52,7 @@
             this.btnYabancıKitaplar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnYabancıKitaplar.Location = new System.Drawing.Point(269, 44);
             this.btnYabancıKitaplar.Name = "btnYabancıKitaplar";
-            this.btnYabancıKitaplar.Size = new System.Drawing.Size(123, 41);
+            this.btnYabancıKitaplar.Size = new System.Drawing.Size(123, 56);
             this.btnYabancıKitaplar.TabIndex = 1;
             this.btnYabancıKitaplar.Text = "Yabancı Kitaplar";
             this.btnYabancıKitaplar.UseVisualStyleBackColor = true;
@@ -63,7 +63,7 @@
             this.btnOdunc.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnOdunc.Location = new System.Drawing.Point(520, 44);
             this.btnOdunc.Name = "btnOdunc";
-            this.btnOdunc.Size = new System.Drawing.Size(132, 41);
+            this.btnOdunc.Size = new System.Drawing.Size(132, 56);
             this.btnOdunc.TabIndex = 2;
             this.btnOdunc.Text = "Ödünç Kitaplar";
             this.btnOdunc.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 164);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 142);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 129);
+            this.pictureBox1.Size = new System.Drawing.Size(208, 151);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;

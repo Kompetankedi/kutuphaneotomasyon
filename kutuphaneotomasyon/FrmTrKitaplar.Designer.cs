@@ -31,6 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kitapNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kitapRafDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KitapAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kitapYazarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblTrKitaplarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dbKutuphaneDataSet2 = new kutuphaneotomasyon.DbKutuphaneDataSet2();
             this.tblTrKitaplarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dbKutuphaneDataSet = new kutuphaneotomasyon.DbKutuphaneDataSet();
             this.tbl_TrKitaplarTableAdapter = new kutuphaneotomasyon.DbKutuphaneDataSetTableAdapters.tbl_TrKitaplarTableAdapter();
@@ -57,20 +64,13 @@
             this.atxtKitapAdi = new System.Windows.Forms.TextBox();
             this.atxtKitapRafNo = new System.Windows.Forms.TextBox();
             this.atxtKitapNo = new System.Windows.Forms.TextBox();
-            this.dbKutuphaneDataSet2 = new kutuphaneotomasyon.DbKutuphaneDataSet2();
-            this.tblTrKitaplarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_TrKitaplarTableAdapter1 = new kutuphaneotomasyon.DbKutuphaneDataSet2TableAdapters.tbl_TrKitaplarTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kitapNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kitapRafDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KitapAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kitapYazarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblTrKitaplarBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbKutuphaneDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblTrKitaplarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbKutuphaneDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbKutuphaneDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblTrKitaplarBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMainMenu
@@ -103,6 +103,62 @@
             this.dataGridView1.Size = new System.Drawing.Size(1103, 200);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 55;
+            // 
+            // kitapNoDataGridViewTextBoxColumn
+            // 
+            this.kitapNoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kitapNoDataGridViewTextBoxColumn.DataPropertyName = "KitapNo";
+            this.kitapNoDataGridViewTextBoxColumn.HeaderText = "KitapNo";
+            this.kitapNoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.kitapNoDataGridViewTextBoxColumn.Name = "kitapNoDataGridViewTextBoxColumn";
+            this.kitapNoDataGridViewTextBoxColumn.Width = 105;
+            // 
+            // kitapRafDataGridViewTextBoxColumn
+            // 
+            this.kitapRafDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kitapRafDataGridViewTextBoxColumn.DataPropertyName = "KitapRaf";
+            this.kitapRafDataGridViewTextBoxColumn.HeaderText = "KitapRaf";
+            this.kitapRafDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.kitapRafDataGridViewTextBoxColumn.Name = "kitapRafDataGridViewTextBoxColumn";
+            this.kitapRafDataGridViewTextBoxColumn.Width = 109;
+            // 
+            // KitapAdi
+            // 
+            this.KitapAdi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.KitapAdi.DataPropertyName = "KitapAdi";
+            this.KitapAdi.HeaderText = "KitapAdi";
+            this.KitapAdi.MinimumWidth = 6;
+            this.KitapAdi.Name = "KitapAdi";
+            this.KitapAdi.Width = 110;
+            // 
+            // kitapYazarDataGridViewTextBoxColumn
+            // 
+            this.kitapYazarDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kitapYazarDataGridViewTextBoxColumn.DataPropertyName = "KitapYazar";
+            this.kitapYazarDataGridViewTextBoxColumn.HeaderText = "KitapYazar";
+            this.kitapYazarDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.kitapYazarDataGridViewTextBoxColumn.Name = "kitapYazarDataGridViewTextBoxColumn";
+            this.kitapYazarDataGridViewTextBoxColumn.Width = 123;
+            // 
+            // tblTrKitaplarBindingSource1
+            // 
+            this.tblTrKitaplarBindingSource1.DataMember = "tbl_TrKitaplar";
+            this.tblTrKitaplarBindingSource1.DataSource = this.dbKutuphaneDataSet2;
+            // 
+            // dbKutuphaneDataSet2
+            // 
+            this.dbKutuphaneDataSet2.DataSetName = "DbKutuphaneDataSet2";
+            this.dbKutuphaneDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblTrKitaplarBindingSource
             // 
@@ -184,7 +240,7 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(370, 27);
+            this.btnEkle.Location = new System.Drawing.Point(429, 14);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(93, 48);
             this.btnEkle.TabIndex = 10;
@@ -194,7 +250,7 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(370, 81);
+            this.btnSil.Location = new System.Drawing.Point(429, 68);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(93, 48);
             this.btnSil.TabIndex = 11;
@@ -204,7 +260,7 @@
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(370, 135);
+            this.btnGuncelle.Location = new System.Drawing.Point(429, 122);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(93, 48);
             this.btnGuncelle.TabIndex = 12;
@@ -214,7 +270,7 @@
             // 
             // btnYenile
             // 
-            this.btnYenile.Location = new System.Drawing.Point(370, 189);
+            this.btnYenile.Location = new System.Drawing.Point(429, 176);
             this.btnYenile.Name = "btnYenile";
             this.btnYenile.Size = new System.Drawing.Size(93, 63);
             this.btnYenile.TabIndex = 13;
@@ -324,70 +380,15 @@
             this.atxtKitapNo.TabIndex = 10;
             this.atxtKitapNo.TextChanged += new System.EventHandler(this.atxtKitapNo_TextChanged);
             // 
-            // dbKutuphaneDataSet2
-            // 
-            this.dbKutuphaneDataSet2.DataSetName = "DbKutuphaneDataSet2";
-            this.dbKutuphaneDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblTrKitaplarBindingSource1
-            // 
-            this.tblTrKitaplarBindingSource1.DataMember = "tbl_TrKitaplar";
-            this.tblTrKitaplarBindingSource1.DataSource = this.dbKutuphaneDataSet2;
-            // 
             // tbl_TrKitaplarTableAdapter1
             // 
             this.tbl_TrKitaplarTableAdapter1.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 55;
-            // 
-            // kitapNoDataGridViewTextBoxColumn
-            // 
-            this.kitapNoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kitapNoDataGridViewTextBoxColumn.DataPropertyName = "KitapNo";
-            this.kitapNoDataGridViewTextBoxColumn.HeaderText = "KitapNo";
-            this.kitapNoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.kitapNoDataGridViewTextBoxColumn.Name = "kitapNoDataGridViewTextBoxColumn";
-            this.kitapNoDataGridViewTextBoxColumn.Width = 105;
-            // 
-            // kitapRafDataGridViewTextBoxColumn
-            // 
-            this.kitapRafDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kitapRafDataGridViewTextBoxColumn.DataPropertyName = "KitapRaf";
-            this.kitapRafDataGridViewTextBoxColumn.HeaderText = "KitapRaf";
-            this.kitapRafDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.kitapRafDataGridViewTextBoxColumn.Name = "kitapRafDataGridViewTextBoxColumn";
-            this.kitapRafDataGridViewTextBoxColumn.Width = 109;
-            // 
-            // KitapAdi
-            // 
-            this.KitapAdi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.KitapAdi.DataPropertyName = "KitapAdi";
-            this.KitapAdi.HeaderText = "KitapAdi";
-            this.KitapAdi.MinimumWidth = 6;
-            this.KitapAdi.Name = "KitapAdi";
-            this.KitapAdi.Width = 110;
-            // 
-            // kitapYazarDataGridViewTextBoxColumn
-            // 
-            this.kitapYazarDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kitapYazarDataGridViewTextBoxColumn.DataPropertyName = "KitapYazar";
-            this.kitapYazarDataGridViewTextBoxColumn.HeaderText = "KitapYazar";
-            this.kitapYazarDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.kitapYazarDataGridViewTextBoxColumn.Name = "kitapYazarDataGridViewTextBoxColumn";
-            this.kitapYazarDataGridViewTextBoxColumn.Width = 123;
             // 
             // FrmTrKitaplar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(1127, 470);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox1);
@@ -414,12 +415,12 @@
             this.Text = "Türkçe Kitaplar";
             this.Load += new System.EventHandler(this.FrmTrKitaplar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblTrKitaplarBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbKutuphaneDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblTrKitaplarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbKutuphaneDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbKutuphaneDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblTrKitaplarBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
