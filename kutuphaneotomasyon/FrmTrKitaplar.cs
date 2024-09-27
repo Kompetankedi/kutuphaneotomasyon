@@ -18,8 +18,17 @@ namespace kutuphaneotomasyon
         {
             InitializeComponent();
         }
-        private void list() { this.tbl_TrKitaplarTableAdapter1.Fill(this.dbKutuphaneDataSet2.tbl_TrKitaplar); }
         SqlConnection con = new SqlConnection("Data Source=.\\SQLExpress;Initial Catalog=DbKutuphane;Integrated Security=True;Encrypt=False");
+        private void list() {
+            if (con.State == ConnectionState.Closed)
+            { con.Open(); }
+            SqlDataAdapter da = new SqlDataAdapter("select * from tbl_TrKitaplar", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
+        
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             Frm_Giris frm_Giris = new Frm_Giris();
@@ -43,7 +52,7 @@ namespace kutuphaneotomasyon
         }
         private void FrmTrKitaplar_Load(object sender, EventArgs e)
         {
-            this.tbl_TrKitaplarTableAdapter1.Fill(this.dbKutuphaneDataSet2.tbl_TrKitaplar);
+            list();
             CenterToScreen();
 
         }
