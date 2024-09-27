@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbKutuphaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbKutuphaneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbKutuphaneDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbKutuphaneDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbKutuphaneDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbKutuphaneDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +108,39 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DbKutuphaneDataSet.xsc">
+      <DependentUpon>DbKutuphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbKutuphaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbKutuphaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbKutuphaneDataSet.xss">
+      <DependentUpon>DbKutuphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbKutuphaneDataSet1.xsc">
+      <DependentUpon>DbKutuphaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DbKutuphaneDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbKutuphaneDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbKutuphaneDataSet1.xss">
+      <DependentUpon>DbKutuphaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DbKutuphaneDataSet2.xsc">
+      <DependentUpon>DbKutuphaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DbKutuphaneDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbKutuphaneDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbKutuphaneDataSet2.xss">
+      <DependentUpon>DbKutuphaneDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -74,9 +74,9 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(340, 265);
+            this.label1.Location = new System.Drawing.Point(242, 259);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 17);
+            this.label1.Size = new System.Drawing.Size(411, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Berk Bağ ve Arda Yalnız tarafından geliştirilmiştir.";
             // 
@@ -92,9 +92,10 @@
             // 
             // Frm_Giris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(665, 291);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);

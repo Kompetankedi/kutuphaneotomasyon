@@ -35,7 +35,7 @@
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(-1, -2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(91, 23);
+            this.btnMainMenu.Size = new System.Drawing.Size(102, 30);
             this.btnMainMenu.TabIndex = 2;
             this.btnMainMenu.Text = "Ana Ekran";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -43,12 +43,12 @@
             // 
             // FrmOduncKitaplar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 339);
             this.Controls.Add(this.btnMainMenu);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmOduncKitaplar";
             this.ShowIcon = false;
             this.Text = "Ödünç Kitaplar";
