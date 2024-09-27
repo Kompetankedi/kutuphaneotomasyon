@@ -32,7 +32,6 @@
             this.btnTrKitap = new System.Windows.Forms.Button();
             this.btnYabancıKitaplar = new System.Windows.Forms.Button();
             this.btnOdunc = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -40,7 +39,7 @@
             // btnTrKitap
             // 
             this.btnTrKitap.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnTrKitap.Location = new System.Drawing.Point(12, 44);
+            this.btnTrKitap.Location = new System.Drawing.Point(11, 44);
             this.btnTrKitap.Name = "btnTrKitap";
             this.btnTrKitap.Size = new System.Drawing.Size(123, 41);
             this.btnTrKitap.TabIndex = 0;
@@ -51,7 +50,7 @@
             // btnYabancıKitaplar
             // 
             this.btnYabancıKitaplar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnYabancıKitaplar.Location = new System.Drawing.Point(270, 44);
+            this.btnYabancıKitaplar.Location = new System.Drawing.Point(269, 44);
             this.btnYabancıKitaplar.Name = "btnYabancıKitaplar";
             this.btnYabancıKitaplar.Size = new System.Drawing.Size(123, 41);
             this.btnYabancıKitaplar.TabIndex = 1;
@@ -62,23 +61,13 @@
             // btnOdunc
             // 
             this.btnOdunc.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnOdunc.Location = new System.Drawing.Point(521, 44);
+            this.btnOdunc.Location = new System.Drawing.Point(520, 44);
             this.btnOdunc.Name = "btnOdunc";
             this.btnOdunc.Size = new System.Drawing.Size(132, 41);
             this.btnOdunc.TabIndex = 2;
             this.btnOdunc.Text = "Ödünç Kitaplar";
             this.btnOdunc.UseVisualStyleBackColor = true;
             this.btnOdunc.Click += new System.EventHandler(this.btnOdunc_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(242, 259);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Berk Bağ ve Arda Yalnız tarafından geliştirilmiştir.";
             // 
             // pictureBox1
             // 
@@ -94,11 +83,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(665, 291);
+            this.ClientSize = new System.Drawing.Size(662, 291);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOdunc);
             this.Controls.Add(this.btnYabancıKitaplar);
             this.Controls.Add(this.btnTrKitap);
@@ -110,7 +97,6 @@
             this.Load += new System.EventHandler(this.Frm_Giris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -119,7 +105,6 @@
         private System.Windows.Forms.Button btnTrKitap;
         private System.Windows.Forms.Button btnYabancıKitaplar;
         private System.Windows.Forms.Button btnOdunc;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
