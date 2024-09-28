@@ -33,13 +33,14 @@
             this.btnYabancıKitaplar = new System.Windows.Forms.Button();
             this.btnOdunc = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnTrKitap
             // 
             this.btnTrKitap.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnTrKitap.Location = new System.Drawing.Point(11, 44);
+            this.btnTrKitap.Location = new System.Drawing.Point(218, 110);
             this.btnTrKitap.Name = "btnTrKitap";
             this.btnTrKitap.Size = new System.Drawing.Size(123, 56);
             this.btnTrKitap.TabIndex = 0;
@@ -50,7 +51,7 @@
             // btnYabancıKitaplar
             // 
             this.btnYabancıKitaplar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnYabancıKitaplar.Location = new System.Drawing.Point(269, 44);
+            this.btnYabancıKitaplar.Location = new System.Drawing.Point(218, 12);
             this.btnYabancıKitaplar.Name = "btnYabancıKitaplar";
             this.btnYabancıKitaplar.Size = new System.Drawing.Size(123, 56);
             this.btnYabancıKitaplar.TabIndex = 1;
@@ -61,9 +62,9 @@
             // btnOdunc
             // 
             this.btnOdunc.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnOdunc.Location = new System.Drawing.Point(520, 44);
+            this.btnOdunc.Location = new System.Drawing.Point(403, 12);
             this.btnOdunc.Name = "btnOdunc";
-            this.btnOdunc.Size = new System.Drawing.Size(132, 56);
+            this.btnOdunc.Size = new System.Drawing.Size(123, 56);
             this.btnOdunc.TabIndex = 2;
             this.btnOdunc.Text = "Ödünç Kitaplar";
             this.btnOdunc.UseVisualStyleBackColor = true;
@@ -72,19 +73,31 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 142);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 151);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.Location = new System.Drawing.Point(403, 110);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 56);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Öğrenci Kayıt";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Frm_Giris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(662, 291);
+            this.ClientSize = new System.Drawing.Size(538, 291);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOdunc);
             this.Controls.Add(this.btnYabancıKitaplar);
@@ -106,6 +119,7 @@
         private System.Windows.Forms.Button btnYabancıKitaplar;
         private System.Windows.Forms.Button btnOdunc;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

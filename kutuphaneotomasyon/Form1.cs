@@ -40,5 +40,11 @@ namespace kutuphaneotomasyon
             FrmOduncKitaplar f= new FrmOduncKitaplar();
             f.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ogrenci o= new Ogrenci();
+            o.Show();
+        }
     }
 }

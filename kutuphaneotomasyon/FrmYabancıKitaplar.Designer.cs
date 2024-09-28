@@ -91,7 +91,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(28, 142);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 23);
+            this.label6.Size = new System.Drawing.Size(80, 17);
             this.label6.TabIndex = 17;
             this.label6.Text = "Kitap Yazarı";
             // 
@@ -100,7 +100,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(46, 105);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 23);
+            this.label7.Size = new System.Drawing.Size(65, 17);
             this.label7.TabIndex = 16;
             this.label7.Text = "Kitap Adı";
             // 
@@ -109,7 +109,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(16, 73);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 23);
+            this.label8.Size = new System.Drawing.Size(88, 17);
             this.label8.TabIndex = 15;
             this.label8.Text = "Kitap Raf NO";
             // 
@@ -118,7 +118,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(51, 35);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 23);
+            this.label9.Size = new System.Drawing.Size(62, 17);
             this.label9.TabIndex = 14;
             this.label9.Text = "Kitap No";
             // 
@@ -126,36 +126,40 @@
             // 
             this.atxtKitapYazar.Location = new System.Drawing.Point(138, 142);
             this.atxtKitapYazar.Name = "atxtKitapYazar";
-            this.atxtKitapYazar.Size = new System.Drawing.Size(220, 29);
+            this.atxtKitapYazar.Size = new System.Drawing.Size(220, 25);
             this.atxtKitapYazar.TabIndex = 13;
+            this.atxtKitapYazar.TextChanged += new System.EventHandler(this.atxtKitapYazar_TextChanged);
             // 
             // atxtKitapAdi
             // 
             this.atxtKitapAdi.Location = new System.Drawing.Point(138, 102);
             this.atxtKitapAdi.Name = "atxtKitapAdi";
-            this.atxtKitapAdi.Size = new System.Drawing.Size(220, 29);
+            this.atxtKitapAdi.Size = new System.Drawing.Size(220, 25);
             this.atxtKitapAdi.TabIndex = 12;
+            this.atxtKitapAdi.TextChanged += new System.EventHandler(this.atxtKitapAdi_TextChanged);
             // 
             // atxtKitapRafNo
             // 
             this.atxtKitapRafNo.Location = new System.Drawing.Point(138, 67);
             this.atxtKitapRafNo.Name = "atxtKitapRafNo";
-            this.atxtKitapRafNo.Size = new System.Drawing.Size(220, 29);
+            this.atxtKitapRafNo.Size = new System.Drawing.Size(220, 25);
             this.atxtKitapRafNo.TabIndex = 11;
+            this.atxtKitapRafNo.TextChanged += new System.EventHandler(this.atxtKitapRafNo_TextChanged);
             // 
             // atxtKitapNo
             // 
             this.atxtKitapNo.Location = new System.Drawing.Point(138, 32);
             this.atxtKitapNo.Name = "atxtKitapNo";
-            this.atxtKitapNo.Size = new System.Drawing.Size(220, 29);
+            this.atxtKitapNo.Size = new System.Drawing.Size(220, 25);
             this.atxtKitapNo.TabIndex = 10;
+            this.atxtKitapNo.TextChanged += new System.EventHandler(this.atxtKitapNo_TextChanged);
             // 
             // textBox1
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(166, 24);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 29);
+            this.textBox1.Size = new System.Drawing.Size(220, 25);
             this.textBox1.TabIndex = 31;
             // 
             // label5
@@ -163,7 +167,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(149, 201);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(237, 23);
+            this.label5.Size = new System.Drawing.Size(182, 17);
             this.label5.TabIndex = 30;
             this.label5.Text = "Hiç  Bir değeri Boş Girmeyin";
             // 
@@ -212,7 +216,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(56, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 23);
+            this.label4.Size = new System.Drawing.Size(80, 17);
             this.label4.TabIndex = 25;
             this.label4.Text = "Kitap Yazarı";
             // 
@@ -221,7 +225,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(74, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 23);
+            this.label3.Size = new System.Drawing.Size(65, 17);
             this.label3.TabIndex = 24;
             this.label3.Text = "Kitap Adı";
             // 
@@ -230,7 +234,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(44, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 23);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 23;
             this.label2.Text = "Kitap Raf NO";
             // 
@@ -239,7 +243,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(79, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 23);
+            this.label1.Size = new System.Drawing.Size(62, 17);
             this.label1.TabIndex = 22;
             this.label1.Text = "Kitap No";
             // 
@@ -247,28 +251,28 @@
             // 
             this.txtKitapYazar.Location = new System.Drawing.Point(166, 169);
             this.txtKitapYazar.Name = "txtKitapYazar";
-            this.txtKitapYazar.Size = new System.Drawing.Size(220, 29);
+            this.txtKitapYazar.Size = new System.Drawing.Size(220, 25);
             this.txtKitapYazar.TabIndex = 21;
             // 
             // txtKitapAdi
             // 
             this.txtKitapAdi.Location = new System.Drawing.Point(166, 129);
             this.txtKitapAdi.Name = "txtKitapAdi";
-            this.txtKitapAdi.Size = new System.Drawing.Size(220, 29);
+            this.txtKitapAdi.Size = new System.Drawing.Size(220, 25);
             this.txtKitapAdi.TabIndex = 20;
             // 
             // txtRafNo
             // 
             this.txtRafNo.Location = new System.Drawing.Point(166, 94);
             this.txtRafNo.Name = "txtRafNo";
-            this.txtRafNo.Size = new System.Drawing.Size(220, 29);
+            this.txtRafNo.Size = new System.Drawing.Size(220, 25);
             this.txtRafNo.TabIndex = 19;
             // 
             // txtKitapNo
             // 
             this.txtKitapNo.Location = new System.Drawing.Point(166, 59);
             this.txtKitapNo.Name = "txtKitapNo";
-            this.txtKitapNo.Size = new System.Drawing.Size(220, 29);
+            this.txtKitapNo.Size = new System.Drawing.Size(220, 25);
             this.txtKitapNo.TabIndex = 18;
             // 
             // dataGridView1
@@ -293,11 +297,11 @@
             this.KitapAdi.HeaderText = "KitapAdi";
             this.KitapAdi.MinimumWidth = 6;
             this.KitapAdi.Name = "KitapAdi";
-            this.KitapAdi.Width = 110;
+            this.KitapAdi.Width = 86;
             // 
             // FrmYabancıKitaplar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1156, 492);

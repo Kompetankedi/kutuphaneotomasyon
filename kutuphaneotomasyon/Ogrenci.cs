@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace kutuphaneotomasyon
 {
-    public partial class FrmOduncKitaplar : Form
+    public partial class Ogrenci : Form
     {
-        public FrmOduncKitaplar()
+        public Ogrenci()
         {
             InitializeComponent();
         }
@@ -28,15 +28,16 @@ namespace kutuphaneotomasyon
             dataGridView1.DataSource = dt;
             con.Close();
         }
+
+        private void Ogrenci_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();list();
+        }
+
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             Frm_Giris f= new Frm_Giris();
             f.Show();
-        }
-
-        private void FrmOduncKitaplar_Load(object sender, EventArgs e)
-        {
-            CenterToScreen();
         }
     }
 }

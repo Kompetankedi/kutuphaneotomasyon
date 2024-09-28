@@ -1,6 +1,6 @@
 ﻿namespace kutuphaneotomasyon
 {
-    partial class FrmOduncKitaplar
+    partial class Ogrenci
     {
         /// <summary>
         /// Required designer variable.
@@ -35,37 +35,35 @@
             // 
             // btnMainMenu
             // 
-            this.btnMainMenu.Location = new System.Drawing.Point(-1, -2);
+            this.btnMainMenu.Location = new System.Drawing.Point(-3, -1);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(102, 30);
-            this.btnMainMenu.TabIndex = 2;
+            this.btnMainMenu.TabIndex = 3;
             this.btnMainMenu.Text = "Ana Ekran";
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 177);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 169);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(675, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.Size = new System.Drawing.Size(805, 150);
+            this.dataGridView1.TabIndex = 4;
             // 
-            // FrmOduncKitaplar
+            // Ogrenci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 339);
+            this.ClientSize = new System.Drawing.Size(829, 331);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnMainMenu);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FrmOduncKitaplar";
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Ogrenci";
             this.ShowIcon = false;
-            this.Text = "Ödünç Kitaplar";
-            this.Load += new System.EventHandler(this.FrmOduncKitaplar_Load);
+            this.Text = "Ogrenci";
+            this.Load += new System.EventHandler(this.Ogrenci_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
