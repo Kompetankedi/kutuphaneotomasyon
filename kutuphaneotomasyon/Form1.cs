@@ -20,6 +20,7 @@ namespace kutuphaneotomasyon
         private void Frm_Giris_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+           
         }
 
         private void btnTrKitap_Click(object sender, EventArgs e)

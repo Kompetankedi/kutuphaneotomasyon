@@ -37,6 +37,13 @@ namespace kutuphaneotomasyon
         private void FrmOduncKitaplar_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            comboBox1.Items.Add("Teslim Edildi");
+            comboBox1.Items.Add("Teslim Alındı")
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -132,5 +132,10 @@ namespace kutuphaneotomasyon
         {
             bul("select * from YabancıRoman where KitapYazar like '%" + atxtKitapYazar.Text + "%'");
         }
+
+        private void btnProgKapa_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
