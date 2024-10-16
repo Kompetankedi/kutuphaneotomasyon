@@ -96,11 +96,11 @@
             this.kitapRafDataGridViewTextBoxColumn,
             this.kitapNoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblTrKitaplarBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(-3, 258);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 258);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1103, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(1127, 212);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
@@ -305,7 +305,7 @@
             this.groupBox1.Controls.Add(this.atxtKitapAdi);
             this.groupBox1.Controls.Add(this.atxtKitapRafNo);
             this.groupBox1.Controls.Add(this.atxtKitapNo);
-            this.groupBox1.Location = new System.Drawing.Point(575, 14);
+            this.groupBox1.Location = new System.Drawing.Point(575, 1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(540, 238);
             this.groupBox1.TabIndex = 16;
