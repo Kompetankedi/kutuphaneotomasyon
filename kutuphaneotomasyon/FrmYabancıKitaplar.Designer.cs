@@ -339,6 +339,7 @@
             this.Name = "FrmYabancıKitaplar";
             this.ShowIcon = false;
             this.Text = "Yabancı Kitaplar";
+            this.Load += new System.EventHandler(this.FrmYabancıKitaplar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

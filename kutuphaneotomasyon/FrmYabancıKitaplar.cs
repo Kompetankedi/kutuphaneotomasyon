@@ -137,5 +137,10 @@ namespace kutuphaneotomasyon
         {
             Application.Exit();
         }
+
+        private void FrmYabancıKitaplar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
