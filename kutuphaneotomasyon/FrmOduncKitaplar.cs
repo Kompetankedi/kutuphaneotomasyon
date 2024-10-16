@@ -19,7 +19,7 @@ namespace kutuphaneotomasyon
         }
 
         #region BağlantıCümlesi
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-GI4K7F4;Initial Catalog=dbKutuphane;Integrated Security=True;");
+        SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLExpress;Initial Catalog=DbKutuphane;Integrated Security=True;Encrypt=False");
         #endregion
         #region VeriGoster
         private void VeriGoster()

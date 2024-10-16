@@ -32,6 +32,8 @@
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtaraSinif = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.TxtAraKitapAdi = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -62,8 +64,6 @@
             this.btnYeni = new System.Windows.Forms.Button();
             this.lblİd = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtaraSinif = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -111,11 +111,28 @@
             this.groupBox1.Text = "Arama";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // txtaraSinif
+            // 
+            this.txtaraSinif.Location = new System.Drawing.Point(157, 153);
+            this.txtaraSinif.Name = "txtaraSinif";
+            this.txtaraSinif.Size = new System.Drawing.Size(220, 25);
+            this.txtaraSinif.TabIndex = 21;
+            this.txtaraSinif.TextChanged += new System.EventHandler(this.txtaraSinif_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(87, 160);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 17);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Sınıf";
+            // 
             // TxtAraKitapAdi
             // 
             this.TxtAraKitapAdi.Location = new System.Drawing.Point(157, 113);
             this.TxtAraKitapAdi.Name = "TxtAraKitapAdi";
-            this.TxtAraKitapAdi.Size = new System.Drawing.Size(220, 29);
+            this.TxtAraKitapAdi.Size = new System.Drawing.Size(220, 25);
             this.TxtAraKitapAdi.TabIndex = 19;
             this.TxtAraKitapAdi.TextChanged += new System.EventHandler(this.TxtAraKitapAdi_TextChanged);
             // 
@@ -124,7 +141,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(50, 119);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 23);
+            this.label10.Size = new System.Drawing.Size(77, 17);
             this.label10.TabIndex = 18;
             this.label10.Text = "Kitabın Adı";
             // 
@@ -133,7 +150,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(23, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 23);
+            this.label4.Size = new System.Drawing.Size(103, 17);
             this.label4.TabIndex = 17;
             this.label4.Text = "Kitap Numarası";
             // 
@@ -141,7 +158,7 @@
             // 
             this.txtAraKitapNo.Location = new System.Drawing.Point(157, 69);
             this.txtAraKitapNo.Name = "txtAraKitapNo";
-            this.txtAraKitapNo.Size = new System.Drawing.Size(220, 29);
+            this.txtAraKitapNo.Size = new System.Drawing.Size(220, 25);
             this.txtAraKitapNo.TabIndex = 16;
             this.txtAraKitapNo.TextChanged += new System.EventHandler(this.txtAraKitapNo_TextChanged);
             // 
@@ -150,7 +167,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(64, 34);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 23);
+            this.label9.Size = new System.Drawing.Size(66, 17);
             this.label9.TabIndex = 14;
             this.label9.Text = "Ad Soyad";
             // 
@@ -158,7 +175,7 @@
             // 
             this.txtAraAdSoyad.Location = new System.Drawing.Point(157, 31);
             this.txtAraAdSoyad.Name = "txtAraAdSoyad";
-            this.txtAraAdSoyad.Size = new System.Drawing.Size(220, 29);
+            this.txtAraAdSoyad.Size = new System.Drawing.Size(220, 25);
             this.txtAraAdSoyad.TabIndex = 10;
             this.txtAraAdSoyad.TextChanged += new System.EventHandler(this.txtAraAdSoyad_TextChanged);
             // 
@@ -166,28 +183,28 @@
             // 
             this.txtAliciAdSoyad.Location = new System.Drawing.Point(196, 131);
             this.txtAliciAdSoyad.Name = "txtAliciAdSoyad";
-            this.txtAliciAdSoyad.Size = new System.Drawing.Size(121, 29);
+            this.txtAliciAdSoyad.Size = new System.Drawing.Size(121, 25);
             this.txtAliciAdSoyad.TabIndex = 4;
             // 
             // TxtSinif
             // 
             this.TxtSinif.Location = new System.Drawing.Point(196, 287);
             this.TxtSinif.Name = "TxtSinif";
-            this.TxtSinif.Size = new System.Drawing.Size(121, 29);
+            this.TxtSinif.Size = new System.Drawing.Size(121, 25);
             this.TxtSinif.TabIndex = 5;
             // 
             // txtKitapNo
             // 
             this.txtKitapNo.Location = new System.Drawing.Point(196, 234);
             this.txtKitapNo.Name = "txtKitapNo";
-            this.txtKitapNo.Size = new System.Drawing.Size(121, 29);
+            this.txtKitapNo.Size = new System.Drawing.Size(121, 25);
             this.txtKitapNo.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(194, 383);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(311, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(311, 25);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // btnEkle
@@ -225,7 +242,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(50, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 23);
+            this.label1.Size = new System.Drawing.Size(97, 17);
             this.label1.TabIndex = 13;
             this.label1.Text = "Alıcı Ad Soyad";
             // 
@@ -234,7 +251,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(130, 293);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 23);
+            this.label2.Size = new System.Drawing.Size(36, 17);
             this.label2.TabIndex = 14;
             this.label2.Text = "Sınıf";
             // 
@@ -243,7 +260,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(43, 240);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 23);
+            this.label3.Size = new System.Drawing.Size(103, 17);
             this.label3.TabIndex = 15;
             this.label3.Text = "Kitap Numarası";
             // 
@@ -252,7 +269,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(58, 389);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 23);
+            this.label5.Size = new System.Drawing.Size(92, 17);
             this.label5.TabIndex = 18;
             this.label5.Text = "Alındığı Tarih";
             // 
@@ -270,7 +287,7 @@
             // 
             this.TxtKitabinAdi.Location = new System.Drawing.Point(196, 186);
             this.TxtKitabinAdi.Name = "TxtKitabinAdi";
-            this.TxtKitabinAdi.Size = new System.Drawing.Size(121, 29);
+            this.TxtKitabinAdi.Size = new System.Drawing.Size(121, 25);
             this.TxtKitabinAdi.TabIndex = 21;
             // 
             // label6
@@ -278,7 +295,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(81, 193);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 23);
+            this.label6.Size = new System.Drawing.Size(77, 17);
             this.label6.TabIndex = 22;
             this.label6.Text = "Kitabın Adı";
             // 
@@ -286,7 +303,7 @@
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(194, 432);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(311, 29);
+            this.dateTimePicker2.Size = new System.Drawing.Size(311, 25);
             this.dateTimePicker2.TabIndex = 23;
             // 
             // label7
@@ -294,7 +311,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(39, 438);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 23);
+            this.label7.Size = new System.Drawing.Size(106, 17);
             this.label7.TabIndex = 24;
             this.label7.Text = "İade Ettiği Tarih";
             // 
@@ -303,7 +320,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(72, 336);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 23);
+            this.label8.Size = new System.Drawing.Size(80, 17);
             this.label8.TabIndex = 26;
             this.label8.Text = "Açıklamalar";
             // 
@@ -312,7 +329,7 @@
             this.cmbAciklama.FormattingEnabled = true;
             this.cmbAciklama.Location = new System.Drawing.Point(196, 336);
             this.cmbAciklama.Name = "cmbAciklama";
-            this.cmbAciklama.Size = new System.Drawing.Size(121, 29);
+            this.cmbAciklama.Size = new System.Drawing.Size(121, 25);
             this.cmbAciklama.TabIndex = 27;
             // 
             // contextMenuStrip1
@@ -335,7 +352,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(194, 82);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 29);
+            this.textBox1.Size = new System.Drawing.Size(123, 25);
             this.textBox1.TabIndex = 28;
             // 
             // btnYeni
@@ -353,7 +370,7 @@
             this.lblİd.AutoSize = true;
             this.lblİd.Location = new System.Drawing.Point(149, 88);
             this.lblİd.Name = "lblİd";
-            this.lblİd.Size = new System.Drawing.Size(28, 23);
+            this.lblİd.Size = new System.Drawing.Size(22, 17);
             this.lblİd.TabIndex = 32;
             this.lblİd.Text = "İD";
             // 
@@ -367,27 +384,11 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(87, 160);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 23);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Sınıf";
-            // 
-            // txtaraSinif
-            // 
-            this.txtaraSinif.Location = new System.Drawing.Point(157, 153);
-            this.txtaraSinif.Name = "txtaraSinif";
-            this.txtaraSinif.Size = new System.Drawing.Size(220, 29);
-            this.txtaraSinif.TabIndex = 21;
-            this.txtaraSinif.TextChanged += new System.EventHandler(this.txtaraSinif_TextChanged);
-            // 
             // FrmOduncKitaplar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Crimson;
             this.ClientSize = new System.Drawing.Size(1102, 654);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblİd);

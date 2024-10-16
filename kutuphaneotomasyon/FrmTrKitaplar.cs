@@ -137,5 +137,10 @@ namespace kutuphaneotomasyon
         {
             bul("select * from TrRoman where KitapYazar like '%" + atxtKitapYazar.Text + "%'");
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
